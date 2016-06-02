@@ -50,7 +50,6 @@ Package.onUse(function (api) {
   api.add_files([
     'lib/custom_fields.js',
     'lib/hooks.js',
-    'lib/main.js',
     'lib/routes.js',
     'lib/settings.js',
     'lib/templates.js'
@@ -59,18 +58,14 @@ Package.onUse(function (api) {
   // client
 
   api.add_files([
-    'lib/client/templates/custom_template.html',
     'lib/client/templates/about_page.html',
     'lib/client/templates/about_link.html',
-    'lib/client/templates/custom_template.js',
-    'lib/client/templates/customPostTitle.html',
     'lib/client/stylesheets/custom.scss'
   ], ['client']);
 
   // server
 
   api.add_files([
-    'lib/server/publications.js'
   ], ['server']);    
 
   // i18n languages (must come last)
@@ -82,7 +77,6 @@ Package.onUse(function (api) {
   // -------------------------------- 3. Variables to export --------------------------------
 
   api.export([
-    'myFunction'
   ]);
 
 });
